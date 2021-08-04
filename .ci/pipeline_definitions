@@ -1,0 +1,15 @@
+whitesource-common:
+  jobs:
+    manual-release:
+      steps:
+        lint: ~
+        release_to_pypi:
+          depends: ['lint']
+      traits:
+        component_descriptor: ~
+        version:
+          preprocess: 'finalize'
+          inject_effective_version: True
+        release:
+          nextversion: 'bump_minor'
+          release_notes_policy: disabled

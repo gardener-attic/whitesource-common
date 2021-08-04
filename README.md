@@ -1,0 +1,1 @@
+This repository contains shared resources required by the [WhiteSource Client](https://github.com/gardener/cc-utils/blob/master/whitesource/client.py) and the [WhiteSource API Extension](https://github.com/gardener/whitesource-api-extension).
